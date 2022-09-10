@@ -13,7 +13,7 @@ The smart contract would consist of two functions:
 **Signing system** -- As an input, smart-contract requires the Petition Number in order to update the list of signature.No of signatures are incremented upon calling this function. Assertions are provided to check whether no two Signatures are same. 
 
 Taquito is used to interact with the blockchain and smart contracts on the backend using React. Using APIs on Jakarta Network with tzstats. 
-```https://api.jakarta.tzstats.com/explorer/bigmap/79670/values```
+```https://api.jakarta.tzstats.com/explorer/bigmap/85462/values```
 where 79760 acts as the id of the bigmap and displayed on the front-end.
 
 
@@ -38,7 +38,14 @@ npm run start
 ```
 
 
+
 ## Deployment of Smart Contract
 
 Smart Contract is deployed on ***Jakarta Network.***
-Smart Contract hash value is `KT1D7hiJZbMvVbQ5mB8SCHb2hR6f2Bv6vrpE`
+Smart Contract hash value is `KT1V4NS7FAJXNCtbfY6mHoDnrsz1yX8tKx8e`
+
+## Demo
+![tuto](https://user-images.githubusercontent.com/60133406/184505807-d8d4f562-a015-4e7d-ad06-39e9d20edd17.gif)
+
+## Live Site
+```https://depetition.netlify.app/```
