@@ -18,9 +18,11 @@ where 79760 acts as the id of the bigmap and displayed on the front-end.
 
 
 
-## 🚀 Running Instructions
+## Prerequisites
+This project requires NodeJS (version 8 or later) and NPM. Node and NPM are really easy to install. To make sure you have them available on your machine, try running the following command.
 
-Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since npm `5.2.0`)
+npm >= 6.4.1
+node.js >= v8.16.0
 
 ##  Install
 

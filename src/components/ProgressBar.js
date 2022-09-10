@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 
 export default function ProgressBar({number}) {
     const [opacity,setOpacity] = React.useState({});
+    let increment = 1;
+
+    if(250*increment < number){
+      while(250*increment < number){
+        increment++;
+      }
+    }
 
     setTimeout(()=>{
         const newOpacity = 1
@@ -27,7 +34,7 @@ export default function ProgressBar({number}) {
             borderRadius: '100px',
             background: '#ECB365',
             height: '30px',
-            width: `${number/250*100}%`,
+            width: `${number/(250*increment)*100}%`,
 
         }}></div>
         
@@ -37,7 +44,7 @@ export default function ProgressBar({number}) {
       <span className='font-bold'>{number}</span> people have already signed
     </div>
     <div>
-      <span className='font-bold'>250</span> signatures goal
+      <span className='font-bold'>{250*increment}</span> signatures goal
     </div>
   </div>
   </div>

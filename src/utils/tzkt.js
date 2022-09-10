@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const fetchStorage = async () => {
   const res = await axios.get(
-    "https://api.jakarta.tzstats.com/explorer/bigmap/79670/values"
+    "https://api.jakarta.tzstats.com/explorer/bigmap/85462/values"
   )
   const data = [];
   res.data.forEach((petition)=> {

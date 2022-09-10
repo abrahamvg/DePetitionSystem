@@ -5,7 +5,7 @@ import ProgressBar from '../ProgressBar';
 function ReadMore({title,content,signature,number,link ='#'}){
   
   const newText = content.slice(0,200);
-  if(newText.length > 200){
+  if(content.length >= 200){
   return(
     <p>
     {newText}
