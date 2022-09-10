@@ -1,0 +1,69 @@
+.item-container {
+  display: flex;
+  margin-left: 2.5rem;
+  align-items: center;
+}
+
+.text-container {
+    color: #ffffff; 
+    font-weight: 700; 
+    font-size: 5.5rem;
+    line-height: 6.8rem;
+}
+
+div.items{
+    margin-top: 5.8rem;
+    margin-left: 3.8rem;
+}
+
+ .you-text{
+    color:rgb(236, 179, 101);
+} 
+
+/* .change-text{
+    font-size: 6.25rem;
+} */
+
+.write-petiiton{
+    font-size: 1.2rem;
+}
+
+img{
+    margin-top:1rem;
+}
+
+/* .can-text{
+    font-size: 1rem;
+} */
+
+Button.button-css{
+    background-color: rgb(236, 179, 101);
+} 
+
+Button.button-css:hover{
+    background-color:rgb(129, 103, 67);
+} 
+
+@media only screen and ((min-width: 400px) and (max-width: 768px)) {
+    .item-container{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .text-container { 
+        font-size: medium;
+    }
+    
+    .theme{
+        left:55px;
+    }
+
+    p.text-container{
+        font-size: 7.0rem;
+    }
+    Button.button-css{
+        margin-left: 3.8rem;
+    }
+  }
+
+  

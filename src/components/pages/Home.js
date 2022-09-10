@@ -3,6 +3,7 @@ import Navbar from '../Navbar';
 import Button from '@mui/material/Button';
 import {  useNavigate } from 'react-router-dom';
 import { getAccount,connectWallet } from '../../utils/wallet';
+import './Home.css';
 
 export default function Home() {
   const [account, setAccount] = useState("");
@@ -30,15 +31,14 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-    <div className="flex items-center theme space-x-10">
-      <img src="/images/decoration.png" alt="decoration" className='decoration' />
+    <div className="theme item-container">
+      <img src="images/foreground.png" alt="decoration" className='decoration' />
       <div className="items">
-        <p className='text-white font-bold'>Fight <br /> Disrupt <br /> Change</p>
-        <Button variant="contained" 
+        <p className="text-container text-white font-bold"><span className="you-text">You</span> <span className="can-text">Can</span><br /> <span className="change-text">Change</span><br />The World.</p>
+        <Button className='button-css' variant="contained" 
         
         style={{
-        borderRadius: 35,
-        backgroundColor: "#ECB365",
+        borderRadius: 24,
         padding: "18px 36px",
         fontSize: "18px",
         color: "#000000",
@@ -53,12 +53,13 @@ export default function Home() {
           }
         }}
         >
-      Write a Petiton</Button>
+      <span className="write-petiiton">Write a Petiton</span></Button>
       </div>    
 
     </div> 
+    <div>
+
+    </div>
     </>
   )
 }
-
-
