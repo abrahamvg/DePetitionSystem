@@ -7,19 +7,17 @@ export default function MyPetitions({account}) {
   const [petitions,setPetitions] = useState([]);
 
   useEffect(() => {
+    
     (async () => {
       const data= await fetchStorage();
       const test = []
-      Object.values(data).forEach((petition)=> {        
+      Object.values(data).forEach((petition)=> {
         if(petition.hash === account){
-          test.push({'title': petition.title, 'content': petition.content,'signatures': petition.signature})
-        }
-      })
+        test.push({'title': petition.title, 'content': petition.content,'signatures': petition.signature, 'number':petition.key})
+      }})
       setPetitions(test)
     })();
   }, []);
-
-  
 
   
   return (
@@ -30,7 +28,7 @@ export default function MyPetitions({account}) {
       <div className='grid justify-items-center'>
       {petitions.map((data,id)=>{
           return(
-            <CardP id = {id} title={data.title} content = {data.content} signature = {data.signatures}/>
+            <CardP id = {id} title={data.title} content = {data.content} signature = {data.signatures} number= {data.number}/>
           )
         })}
       </div>

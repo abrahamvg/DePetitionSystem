@@ -28,7 +28,7 @@ export default function CardP({id,title,content,signature,number}) {
 
   let navigate = useNavigate();
   const routeChange = () =>{ 
-    navigate("/display",{ state: { title: title, content: content ,signature: signature, number: number} });
+    navigate(`/display/${number}`,{ state: { title: title, content: content ,signature: signature, number: number} });
   }
 
 

@@ -55,7 +55,7 @@ function App() {
       <Route path='/petition' element={<Petition/>} />
       <Route path='/browse' element={<Browse/>} />
       <Route path='/mypetitions' element={<MyPetitions account={account}/>} />
-      
+      <Route path="/display/:id" element={<Display/>} />
     </Routes>
     </>
   );
