@@ -1,7 +1,7 @@
 import { BeaconWallet } from "@taquito/beacon-wallet";
 
 export const wallet = new BeaconWallet({
-  name: "Tezos Lottery Dapp",
+  name: "Decentralised Petition App",
   preferredNetwork: "jakartanet",
 });
 

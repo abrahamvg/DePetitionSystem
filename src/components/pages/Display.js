@@ -23,7 +23,7 @@ export default function Display() {
       setPetitions(test)
     })();
   }, []);
-
+  console.log(petitions);
   return (
     petitions.length!==0&&
     <>
@@ -69,7 +69,7 @@ export default function Display() {
               <BiShare className='mr-2 ' />
             Share Link</Button>   
             </div>
-            <ProgressBar number = {petitions[0].signature} />
+            <ProgressBar number = {petitions[0].signatures} />
             
         </div>
         </div>

@@ -8,11 +8,30 @@
   }
 }
 
+@font-face {
+  font-family: SfPro;
+  src:url("assets/font.ttf");
+}
+@font-face {
+  font-family: HarmoniaSansRegular;
+  src:url("assets/HarmoniaSansW01Regular.ttf");
+}
+@font-face {
+  font-family: HarmoniaSansBold;
+  src:url("assets/HarmoniaSansW01Bold.ttf");
+}
+@font-face {
+  font-family: SfPro;
+  src:url("assets/font.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #041C32;
-  font-family: 'Roboto', sans-serif;
+  background-image: url("images/bg.png");
+  background-repeat: no-repeat;
+  background-color: #030E35;
+  font-family: 'SfPro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,13 +41,14 @@ code {
     monospace;
 }
 .decoration{
-  width: 600px;
+  margin-right: 100px;
+  width: 500px;
 }
 .theme{
-  position: absolute;
+  margin-top: 30px;
+  margin-left: 150px;
   font-size: 130px;
-  top: 80px;
-  left: 100px;
+  font-weight: 700;
   line-height: 130px;
 }
 .wallet{
@@ -42,12 +62,11 @@ code {
 }
 .nav-items{
   color: #ffffff;
-  font-size: large;
+  font-size: 1.35rem;
   font-weight: 510;
 }
 .nav-items:hover{
   color: #d0d0d0;
-  text-decoration: none;
   border-bottom: 5px solid #ECB365;
 }
 

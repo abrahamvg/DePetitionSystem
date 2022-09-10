@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react';
 import {BsWallet} from 'react-icons/bs';
 import { Link} from 'react-router-dom';  
 import {getAccount, connectWallet} from '../utils/wallet'; 
+import './Navbar.css';
 
 
 export default function Navbar() {
@@ -23,7 +24,7 @@ export default function Navbar() {
 
   return (
     <>
-    <div className='sticky top-0 gap-[10rem] flex flex-row shadow-md space-x-12 bg-zinc-900 text-white w-[100%] h-[50px] justify-between px-5 items-center '>
+    <div className='nav-bar'>
       
       <Link to="/" className='nav-items'>The Decentralised Petition App</Link>
 
